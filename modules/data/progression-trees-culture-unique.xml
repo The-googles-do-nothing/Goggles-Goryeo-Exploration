@@ -14,7 +14,7 @@
 		<Row Type="NODE_CIVIC_EX_GORYEO_BYEOKRANDO" Quote="LOC_CIVIC_EX_GORYEO_BYEOKRANDO_QUOTE" QuoteAuthor="LOC_CIVIC_EX_GORYEO_BYEOKRANDO_GORYEO_QUOTE_AUTHOR" QuoteAudio="VO_Quote_Byeokrando"/>
 	</TypeQuotes>
 	<ProgressionTrees>
-		<Row ProgressionTreeType="TREE_CIVICS_EX_GORYEO_JEC" AgeType="AGE_ANTIQUITY" SystemType="SYSTEM_CULTURE" Name="LOC_TREE_CIVICS_EX_GORYEO_JEC_NAME"/>
+		<Row ProgressionTreeType="TREE_CIVICS_EX_GORYEO_JEC" AgeType="AGE_EXPLORATION" SystemType="SYSTEM_CULTURE" Name="LOC_TREE_CIVICS_EX_GORYEO_JEC_NAME"/>
 	</ProgressionTrees>
 	<ProgressionTreeNodes>
 		<Row ProgressionTreeNodeType="NODE_CIVIC_EX_GORYEO_HOJOK" ProgressionTree="TREE_CIVICS_EX_GORYEO_JEC" Cost="800" Name="LOC_CIVIC_EX_GORYEO_HOJOK_NAME" IconString="cult_goryeo_jec" />
