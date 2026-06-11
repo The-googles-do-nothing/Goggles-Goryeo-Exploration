@@ -34,6 +34,7 @@
 	<CivilizationTags>
 		<Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_GORYEO_JEC" TagType="TAG_TRAIT_ECONOMIC"/>
 		<Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_GORYEO_JEC" TagType="TAG_TRAIT_POLITICAL"/>
+		<Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_GORYEO_JEC" TagType="TAG_APEX_AGE_EXPLORATION"/>
 	</CivilizationTags>
 	<LeaderCivilizationBias>
 		<!-- Base -->

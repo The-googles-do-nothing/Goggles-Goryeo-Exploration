@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameEffects xmlns="GameEffects">
 
-	<!-- TRADITION_EX_GORYEO_CHEOLLIJANGSEONG -->
-	<!-- works -->
-	<Modifier id="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_WALLS_DIPLOMACY" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_ADJUST_CONSTRUCTIBLE_YIELD">
+		<Modifier id="MOD_UNLOCK_GORYEO_JEC_SYNCRETISM_ANTIQUITY" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_UNLOCK_TRADITION" run-once="false" permanent="true">
+			<Argument name="Tradition">TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY</Argument>
+		</Modifier>
+		<Modifier id="MOD_UNLOCK_GORYEO_JEC_SYNCRETISM_MODERN" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_UNLOCK_TRADITION" run-once="false" permanent="true">
+			<Argument name="Tradition">TRADITION_GORYEO_JEC_SYNCRETISM_MODERN</Argument>
+		</Modifier>
+
+	<!-- ==================================================	-->
+	<!--	ANTIQUITY							-->
+	<!-- ==================================================	-->
+	<Modifier id="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_WALLS_DIPLOMACY_I" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_ADJUST_CONSTRUCTIBLE_YIELD">
 		<Argument name="Tag">DISTRICT_WALL</Argument>
 		<Argument name="YieldType">YIELD_DIPLOMACY</Argument>
 		<Argument name="Amount">1</Argument>
+		<String context="Description">LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION</String>
+	</Modifier>
+
+	<!-- TRADITION_EX_GORYEO_CHEOLLIJANGSEONG -->
+	<!-- works -->
+	<Modifier id="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_WALLS_DIPLOMACY_II" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_ADJUST_CONSTRUCTIBLE_YIELD">
+		<Argument name="Tag">DISTRICT_WALL</Argument>
+		<Argument name="YieldType">YIELD_DIPLOMACY</Argument>
+		<Argument name="Amount">2</Argument>
 		<String context="Description">LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION</String>
 	</Modifier>
 	<!-- TRADITION_EX_GORYEO_TRIPITAKA_KOREANA -->
 	<!-- works -->
 	<Modifier id="TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_GREAT_WORK_DIPLOMACY" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_YIELD_PER_GREAT_WORK">
 		<Argument name="YieldType">YIELD_DIPLOMACY</Argument>
-		<Argument name="Amount">1</Argument>
+		<Argument name="Amount">3</Argument>
 		<Argument name="Tooltip">LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_NAME</Argument>
 		<String context="Description">LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_DESCRIPTION</String>
 	</Modifier>
@@ -23,7 +40,7 @@
 			<Requirement type="REQUIREMENT_CITY_IS_DISTANT_LANDS" inverse="true"/>
 		</SubjectRequirements>
 		<Argument name="YieldType">YIELD_DIPLOMACY</Argument>
-		<Argument name="Amount">1</Argument>
+		<Argument name="Amount">2</Argument>
 		<Argument name="Tooltip">LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_NAME</Argument>
 	</Modifier>
 
@@ -32,6 +49,33 @@
 	<Modifier id="TRADITION_EX_GORYEO_CHEONGJA_GRANT_WAREHOUSE_YIELD" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_GRANT_WAREHOUSE_YIELD">
 		<Argument name="WarehouseYieldChange">ByeokrandoMarineGold</Argument>
 		<String context="Description">LOC_TRADITION_EX_GORYEO_CHEONGJA_DESCRIPTION</String>
+	</Modifier>
+
+	<!-- ==================================================	-->
+	<!--	MODERN								-->
+	<!-- ==================================================	-->
+	<Modifier id="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_WALLS_DIPLOMACY_III" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_ADJUST_CONSTRUCTIBLE_YIELD">
+		<Argument name="Tag">DISTRICT_WALL</Argument>
+		<Argument name="YieldType">YIELD_DIPLOMACY</Argument>
+		<Argument name="Amount">1</Argument>
+		<String context="Description">LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION</String>
+	</Modifier>
+
+		<!-- Test of Time -->
+		<!-- Syncretism -->
+		
+	<Modifier id="MOD_GORYEO_SYNCRETISM_ANTIQUITY_GREAT_WORK_HAPPINESS" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_YIELD_PER_GREAT_WORK">
+		<Argument name="YieldType">YIELD_HAPPINESS</Argument>
+		<Argument name="Amount">2</Argument>
+		<Argument name="Tooltip">LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_NAME</Argument>
+		<String context="Description">LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_DESCRIPTION</String>
+	</Modifier>
+
+	<Modifier id="MOD_GORYEO_SYNCRETISM_MODERN_GREAT_WORK_HAPPINESS" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_YIELD_PER_GREAT_WORK">
+		<Argument name="YieldType">YIELD_HAPPINESS</Argument>
+		<Argument name="Amount">4</Argument>
+		<Argument name="Tooltip">LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_NAME</Argument>
+		<String context="Description">LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_DESCRIPTION</String>
 	</Modifier>
 
 </GameEffects>

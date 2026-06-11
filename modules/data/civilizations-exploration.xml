@@ -1,0 +1,20 @@
+<Database>
+	<TraitModifiers>
+		<Row TraitType="TRAIT_GORYEO_JEC_ABILITY" ModifierId="MOD_CIV_WONDER_PRODUCTION_GORYEO_JEC"/>
+		<Row TraitType="TRAIT_GORYEO_JEC_ABILITY" ModifierId="MOD_REVEAL_CIV_CULTURE_TREE_GORYEO_JEC"/>
+		<Row TraitType="TRAIT_GORYEO_JEC_ABILITY" ModifierId="TRAIT_GORYEO_JEC_NEGOTIATION_OF_SEOHUI_PER_ACTIVE_TRADITION"/>
+		<Row TraitType="TRAIT_GORYEO_JEC_ABILITY" ModifierId="TRAIT_GORYEO_JEC_NEGOTIATION_OF_SEOHUI_ON_DIPLO_EVENT_END"/>
+	</TraitModifiers>
+	<RequirementSets>
+		<Row RequirementSetId="REQSET_PLAYER_IS_CIVILIZATION_GORYEO_JEC" RequirementSetType="REQUIREMENTSET_TEST_ALL" />
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row RequirementSetId="REQSET_PLAYER_IS_CIVILIZATION_GORYEO_JEC" RequirementId="REQ_PLAYER_HAS_TRAIT_CIVILIZATION_GORYEO_JEC" />
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row RequirementId="REQ_PLAYER_HAS_TRAIT_CIVILIZATION_GORYEO_JEC" RequirementType="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT" />
+	</Requirements>
+	<RequirementArguments>
+		<Row RequirementId="REQ_PLAYER_HAS_TRAIT_CIVILIZATION_GORYEO_JEC" Name="TraitType" Value="TRAIT_CIVILIZATION_GORYEO_JEC" />
+	</RequirementArguments>
+</Database>

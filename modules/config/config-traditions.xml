@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<!-- ========================== -->
+	<!-- GORYEO_JEC -->
+	<!-- ========================== -->
+	<Traditions>
+		<!-- ==================================================	-->
+		<!--	ANTIQUITY							-->
+		<!-- ==================================================	-->
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_I" Name="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_ANTIQUITY" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+		
+		<!-- Exploration-->
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_II" Name="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_EXPLORATION" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+		<Row TraditionType="TRADITION_EX_GORYEO_TRIPITAKA_KOREANA" Name="LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_NAME" Description="LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_EXPLORATION" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEONGJA" Name="LOC_TRADITION_EX_GORYEO_CHEONGJA_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEONGJA_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_EXPLORATION" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+
+		<!-- ==================================================	-->
+		<!--	MODERN								-->
+		<!-- ==================================================	-->
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_III" Name="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_MODERN" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+		
+		<!-- Test of Time -->
+		<!-- Syncretism -->
+        <Row TraditionType="TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY" Name="LOC_TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY_NAME" Description="LOC_TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY_DESCRIPTION" AgeType="AGE_ANTIQUITY" CultureSlotType="TRADITION_CULTURE_SLOT" TraitType="TRAIT_GORYEO_JEC" IgnoreInitializeUnlock="true" AllowInitializeAdvancedStart="true"/>
+		<Row TraditionType="TRADITION_GORYEO_JEC_SYNCRETISM_MODERN" Name="LOC_TRADITION_GORYEO_JEC_SYNCRETISM_MODERN_NAME" Description="LOC_TRADITION_GORYEO_JEC_SYNCRETISM_MODERN_DESCRIPTION" AgeType="AGE_MODERN" CultureSlotType="TRADITION_CULTURE_SLOT" TraitType="TRAIT_GORYEO_JEC" IgnoreInitializeUnlock="true" ObsoletesTraditionType="TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY" AllowInitializeAdvancedStart="true"/>
+	
+    </Traditions>
+	<ProgressionTreeNodes>
+		<Row ProgressionTreeNodeType="NODE_CIVIC_EX_GORYEO_HOJOK" ProgressionTree="TREE_CIVICS_EX_GORYEO_JEC" Cost="800" Name="LOC_CIVIC_EX_GORYEO_HOJOK_NAME" IconString="cult_goryeo_jec" />
+		<Row ProgressionTreeNodeType="NODE_CIVIC_EX_GORYEO_PATRIOTIC_WAR" ProgressionTree="TREE_CIVICS_EX_GORYEO_JEC" Cost="1200" Name="LOC_CIVIC_EX_GORYEO_PATRIOTIC_WAR_NAME" IconString="cult_goryeo_jec" />
+		<Row ProgressionTreeNodeType="NODE_CIVIC_EX_GORYEO_BYEOKRANDO" ProgressionTree="TREE_CIVICS_EX_GORYEO_JEC" Cost="2000" Name="LOC_CIVIC_EX_GORYEO_BYEOKRANDO_NAME" IconString="cult_goryeo_jec" />
+
+		<!-- Test of Time -->
+		<!-- Syncretism -->
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_GORYEO_JEC_ORIGINS" ProgressionTree="TREE_CIVICS_AQ_TEST_OF_TIME" Cost="150" Name="LOC_NODE_CIVIC_AQ_GORYEO_JEC_ORIGINS_NAME" IconString="cult_goryeo_jec" CanSteal="false"/>
+		<Row ProgressionTreeNodeType="NODE_CIVIC_MO_GORYEO_JEC_MODERNIZATION" ProgressionTree="TREE_CIVICS_MO_TEST_OF_TIME" Cost="2000" Name="LOC_NODE_CIVIC_MO_GORYEO_JEC_MODERNIZATION_NAME" IconString="cult_goryeo_jec" CanSteal="false"/>
+	
+
+	</ProgressionTreeNodes>
+	<ProgressionTreeNodeUnlocks>
+		<!-- HOJOK -->
+
+		<!-- PATRIOTIC_WAR -->
+        <Row ProgressionTreeNodeType="NODE_CIVIC_EX_GORYEO_PATRIOTIC_WAR" TargetKind="KIND_TRADITION" TargetType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_II" UnlockDepth="1" />
+		<Row ProgressionTreeNodeType="NODE_CIVIC_EX_GORYEO_PATRIOTIC_WAR" TargetKind="KIND_TRADITION" TargetType="TRADITION_EX_GORYEO_TRIPITAKA_KOREANA" UnlockDepth="2" />
+
+		<!-- NODE_CIVIC_EX_GORYEO_BYEOKRANDO -->
+		
+        <Row ProgressionTreeNodeType="NODE_CIVIC_EX_GORYEO_BYEOKRANDO" TargetKind="KIND_TRADITION" TargetType="TRADITION_EX_GORYEO_CHEONGJA" UnlockDepth="2" />
+		
+		<!-- Test of Time -->
+		<!-- Syncretism -->
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_GORYEO_JEC_ORIGINS" TargetKind="KIND_TRADITION" TargetType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_I"/>
+		<Row ProgressionTreeNodeType="NODE_CIVIC_MO_GORYEO_JEC_MODERNIZATION" TargetKind="KIND_TRADITION" TargetType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_III"/>
+
+
+	</ProgressionTreeNodeUnlocks>
+</Database>

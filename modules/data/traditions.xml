@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<Types>
-		<Row Type="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG" Kind="KIND_TRADITION"/>
+		<!-- ==================================================	-->
+		<!--	ANTIQUITY							-->
+		<!-- ==================================================	-->
+		<Row Type="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_I" Kind="KIND_TRADITION"/>
+
+		<Row Type="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_II" Kind="KIND_TRADITION"/>
 		<Row Type="TRADITION_EX_GORYEO_TRIPITAKA_KOREANA" Kind="KIND_TRADITION"/>
 		<Row Type="TRADITION_EX_GORYEO_CHEONGJA" Kind="KIND_TRADITION"/>
+
+		<!-- ==================================================	-->
+		<!--	MODERN								-->
+		<!-- ==================================================	-->
+		<Row Type="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_III" Kind="KIND_TRADITION"/>
+
+		<!-- Syncretism -->
+		<Row Type="TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY" Kind="KIND_TRADITION"/>
+		<Row Type="TRADITION_GORYEO_JEC_SYNCRETISM_MODERN" Kind="KIND_TRADITION"/>
 
 	</Types>
 	<UnitAbilities>
@@ -13,13 +27,35 @@
 
 	</UnitAbilityModifiers>
 	<Traditions>
-		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG" Name="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_EXPLORATION" CultureSlotType="POLICY_CULTURE_SLOT"/>
-		<Row TraditionType="TRADITION_EX_GORYEO_TRIPITAKA_KOREANA" Name="LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_NAME" Description="LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_EXPLORATION" CultureSlotType="POLICY_CULTURE_SLOT"/>
-		<Row TraditionType="TRADITION_EX_GORYEO_CHEONGJA" Name="LOC_TRADITION_EX_GORYEO_CHEONGJA_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEONGJA_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_EXPLORATION" CultureSlotType="POLICY_CULTURE_SLOT"/>
+		<!-- ==================================================	-->
+		<!--	ANTIQUITY							-->
+		<!-- ==================================================	-->
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_I" Name="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_ANTIQUITY" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+		
+
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_II" Name="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_EXPLORATION" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+		<Row TraditionType="TRADITION_EX_GORYEO_TRIPITAKA_KOREANA" Name="LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_NAME" Description="LOC_TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_EXPLORATION" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEONGJA" Name="LOC_TRADITION_EX_GORYEO_CHEONGJA_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEONGJA_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_EXPLORATION" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+
+		<!-- ==================================================	-->
+		<!--	MODERN								-->
+		<!-- ==================================================	-->
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_III" Name="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_NAME" Description="LOC_TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_DESCRIPTION" TraitType="TRAIT_GORYEO_JEC" AgeType="AGE_MODERN" CultureSlotType="TRADITION_CULTURE_SLOT"/>
+		
+		<!-- Syncretism -->
+        <Row TraditionType="TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY" Name="LOC_TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY_NAME" Description="LOC_TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY_DESCRIPTION" AgeType="AGE_ANTIQUITY" CultureSlotType="TRADITION_CULTURE_SLOT" TraitType="TRAIT_GORYEO_JEC" IgnoreInitializeUnlock="true" AllowInitializeAdvancedStart="true"/>
+		<Row TraditionType="TRADITION_GORYEO_JEC_SYNCRETISM_MODERN" Name="LOC_TRADITION_GORYEO_JEC_SYNCRETISM_MODERN_NAME" Description="LOC_TRADITION_GORYEO_JEC_SYNCRETISM_MODERN_DESCRIPTION" AgeType="AGE_MODERN" CultureSlotType="TRADITION_CULTURE_SLOT" TraitType="TRAIT_GORYEO_JEC" IgnoreInitializeUnlock="true" ObsoletesTraditionType="TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY" AllowInitializeAdvancedStart="true"/>
+	
+
 	</Traditions>
 	<TraditionModifiers>
+		<!-- ==================================================	-->
+		<!--	ANTIQUITY							-->
+		<!-- ==================================================	-->
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_I" ModifierId="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_WALLS_DIPLOMACY_I"/>
+
 		<!-- CHEOLLIJANGSEONG -->
-		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG" ModifierId="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_WALLS_DIPLOMACY"/>
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_II" ModifierId="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_WALLS_DIPLOMACY_II"/>
 
 		<!-- TRIPITAKA_KOREANA -->
 		<Row TraditionType="TRADITION_EX_GORYEO_TRIPITAKA_KOREANA" ModifierId="TRADITION_EX_GORYEO_TRIPITAKA_KOREANA_GREAT_WORK_DIPLOMACY"/>
@@ -27,6 +63,18 @@
 		
 		<!-- CHEONGJA -->
 		<Row TraditionType="TRADITION_EX_GORYEO_CHEONGJA" ModifierId="TRADITION_EX_GORYEO_CHEONGJA_GRANT_WAREHOUSE_YIELD"/>
+
+		<!-- ==================================================	-->
+		<!--	MODERN								-->
+		<!-- ==================================================	-->
+		<Row TraditionType="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_III" ModifierId="TRADITION_EX_GORYEO_CHEOLLIJANGSEONG_WALLS_DIPLOMACY_III"/>
+
+		<!-- Test of Time -->
+		<!-- Syncretism -->
+		<Row TraditionType="TRADITION_GORYEO_JEC_SYNCRETISM_ANTIQUITY" ModifierId="MOD_GORYEO_SYNCRETISM_ANTIQUITY_GREAT_WORK_HAPPINESS"/>
+		<Row TraditionType="TRADITION_GORYEO_JEC_SYNCRETISM_MODERN" ModifierId="MOD_GORYEO_SYNCRETISM_MODERN_GREAT_WORK_HAPPINESS"/>
+
+
 	</TraditionModifiers>
 
 	<UnitClass_Abilities>
