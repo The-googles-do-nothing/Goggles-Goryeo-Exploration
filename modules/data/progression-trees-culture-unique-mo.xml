@@ -3,18 +3,12 @@
 	<!-- Modern -->
 	<Types>
 		<Row Type="NODE_CIVIC_MO_GORYEO_JEC_MODERNIZATION" Kind="KIND_TREE_NODE" />
-
-		<!-- <Row Type="TREE_CIVICS_EX_GORYEO_JEC" Kind="KIND_TREE"/> -->
 	</Types>
 	<TypeQuotes>
 		<Row Type="NODE_CIVIC_MO_GORYEO_JEC_MODERNIZATION" Quote="LOC_CIVIC_MO_MODERNIZATION_QUOTE" QuoteAuthor="LOC_CIVIC_MO_MODERNIZATION_AUTHOR" QuoteAudio="VO_Quote_ToT_MOD_Modernization" />
 	</TypeQuotes>
 
 	<ProgressionTrees>
-		<!-- Civ Unique Trees -->
-		<!-- Swiss Confederacy -->
-		<!-- <Row ProgressionTreeType="TREE_CIVICS_EX_GORYEO_JEC" AgeType="AGE_EXPLORATION" SystemType="SYSTEM_CULTURE" Name="LOC_TREE_CIVICS_EX_GORYEO_JEC_NAME"/>
-	 -->
 	</ProgressionTrees>
 
 	<ProgressionTreeNodes>
