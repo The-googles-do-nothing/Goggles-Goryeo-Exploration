@@ -50,6 +50,10 @@
 		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_HAN" AgeDomain="StandardAges" AgeType="AGE_EXPLORATION" Type="CIVILIZATION_GORYEO_JEC" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_GORYEO_JEC_NAME" Description="LOC_CIVILIZATION_GORYEO_JEC_DESCRIPTION" Icon="CIVILIZATION_GORYEO_JEC"/>
 		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_SILLA" AgeDomain="StandardAges" AgeType="AGE_EXPLORATION" Type="CIVILIZATION_GORYEO_JEC" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_GORYEO_JEC_NAME" Description="LOC_CIVILIZATION_GORYEO_JEC_DESCRIPTION" Icon="CIVILIZATION_GORYEO_JEC"/>
 
+
+		<Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_GORYEO_JEC" AgeDomain="StandardAges" AgeType="AGE_MODERN" Type="CIVILIZATION_MEIJI" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_MEIJI_NAME" Description="LOC_CIVILIZATION_MEIJI_DESCRIPTION" Icon="CIVILIZATION_MEIJI"/>
+	
+
 	</CivilizationUnlocks>
 	<LeaderUnlocks>
 		<!-- Base -->

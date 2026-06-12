@@ -13,7 +13,6 @@
 		<Row TraitType="TRAIT_GORYEO_JEC_ABILITY" Name="LOC_TRAIT_GORYEO_JEC_ABILITY_NAME" Description="LOC_TRAIT_GORYEO_JEC_ABILITY_DESCRIPTION" InternalOnly="true"/>
 	</Traits>
 
-
 	<CivilizationTraits>
 		<Row CivilizationType="CIVILIZATION_GORYEO_JEC" TraitType="TRAIT_EXPLORATION_CIV"/>
 		<Row CivilizationType="CIVILIZATION_GORYEO_JEC" TraitType="TRAIT_GORYEO_JEC"/>
@@ -33,22 +32,6 @@
 		<Row CivilizationType="CIVILIZATION_GORYEO_JEC" TraitType="TRAIT_ATTRIBUTE_POLITICAL_TOT_MO_INFLUENCE" />
 
 	</CivilizationTraits>
-
-	<RequirementSets>
-		<Row RequirementSetId="REQSET_PLAYER_IS_GORYEO" RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
-	</RequirementSets>
-
-	<RequirementSetRequirements>
-		<Row RequirementSetId="REQSET_PLAYER_IS_GORYEO" RequirementId="REQ_PLAYER_HAS_TRAIT_GORYEO_JEC"/>
-	</RequirementSetRequirements>
-
-	<Requirements>
-		<Row RequirementId="REQ_PLAYER_HAS_TRAIT_GORYEO_JEC" RequirementType="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT"/>
-	</Requirements>
-
-	<RequirementArguments>
-		<Row RequirementId="REQ_PLAYER_HAS_TRAIT_GORYEO_JEC" Name="TraitType" Value="TRAIT_GORYEO_JEC"/>
-	</RequirementArguments>
 
 	<LeaderCivPriorities>
 		<!--This is the table used for AI, the UI uses LeaderCivilizationBias in config.xml-->

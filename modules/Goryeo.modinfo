@@ -140,30 +140,24 @@ https://forums.civfanatics.com/threads/design-a-civ-using-known-civ-vii-mechanic
 					<Item>data/traditions.xml</Item>
 					<Item>data/traditions-gameeffects.xml</Item>
 
-
 					<Item>data/civilizations-legacy.xml</Item>
 					<Item>data/civilizations-shared.xml</Item>
 					<Item>data/civilizations-shared-gameeffects.xml</Item>
 
 					<Item>data/unlocks-base-standard.xml</Item>
 					<Item>data/unlocks-antiquity.xml</Item>
+					<Item>data/unlocks-exploration.xml</Item>
 					<Item>data/unlocks-syncretism.xml</Item>
 
 					<Item>data/ai_exploration.xml</Item>
-
-
-					<Item>data/wonders.xml</Item>
-					<Item>data/wonders-gameeffects.xml</Item>
-
-					<Item>data/loading-info-exploration.xml</Item>
-					
+					<Item>data/loading-info-exploration.xml</Item>					
                 </UpdateDatabase>
                 <UpdateVisualRemaps>
                     <Item>data/visual-remap.xml</Item>
                 </UpdateVisualRemaps>
             </Actions>
         </ActionGroup>
-		<ActionGroup id="age-exploration-current-goryeo" scope="game" criteria="antiquity-age-current">
+		<ActionGroup id="antiquity-age-current-goryeo" scope="game" criteria="antiquity-age-current">
 			<Actions>
                 <UpdateDatabase>
 					<Item>data/civilizations-antiquity.xml</Item>
@@ -171,7 +165,7 @@ https://forums.civfanatics.com/threads/design-a-civ-using-known-civ-vii-mechanic
                 </UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="age-exploration-current-goryeo" scope="game" criteria="exploration-age-current">
+		<ActionGroup id="exploration-age-current-goryeo" scope="game" criteria="exploration-age-current">
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/civilizations-exploration.xml</Item>
@@ -180,11 +174,8 @@ https://forums.civfanatics.com/threads/design-a-civ-using-known-civ-vii-mechanic
 					<Item>data/progression-trees-culture-unique-gameeffects.xml</Item>
 
 					<Item>data/constructibles-exploration.xml</Item>
-					<Item>data/constructibles-gameeffects.xml</Item>
-					<Item>data/constructibles.xml</Item>
-
 					<Item>data/progression-trees-tech-common-exploration.xml</Item>
-
+					<Item>data/religion.xml</Item>
 					<Item>data/units.xml</Item>
 					<Item>data/units-gameeffects.xml</Item>
 					<Item>data/narrative-stories-gameeffects-exploration.xml</Item>
@@ -193,7 +184,18 @@ https://forums.civfanatics.com/threads/design-a-civ-using-known-civ-vii-mechanic
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="age-modern-main-goryeo" scope="game" criteria="modern-age-current">
+		<ActionGroup id="exploration-age-persis-persist" scope="game" criteria="exploration-age-persist">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/constructibles.xml</Item>
+					<Item>data/constructibles-gameeffects.xml</Item>
+					<Item>data/wonders.xml</Item>
+					<Item>data/wonders-gameeffects.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		
+		<ActionGroup id="modern-age-current-goryeo" scope="game" criteria="modern-age-current">
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/civilizations-modern.xml</Item>
