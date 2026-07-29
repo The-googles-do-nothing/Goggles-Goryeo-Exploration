@@ -8,8 +8,8 @@ https://forums.civfanatics.com/threads/design-a-civ-using-known-civ-vii-mechanic
  -->
 
 	<Properties>
-		<Name>LOC_MODULE_GORYEO_NAME</Name>
-		<Description>LOC_MODULE_GORYEO_DESCRIPTION</Description>
+		<Name>LOC_MODULE_GORYEO_JEC_NAME</Name>
+		<Description>LOC_MODULE_GORYEO_JEC_DESCRIPTION</Description>
 		<Authors>LOC_AUTHORS_JEC</Authors>
 		<Package>DLC</Package>
 	</Properties>
